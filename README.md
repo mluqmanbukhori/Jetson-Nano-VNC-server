@@ -36,9 +36,13 @@ Jetson Development Kits dan komputer lain harus berada di jaringan yang sama. Di
 </pre></div>
 
 * Running (jalankan) script dengan perintah berikut:
+> **Catatan:** <br>
+Setelah selesai Activasi, program akan otomatis melakukan Rebooting Jetson Nano. Mohon pastikan data yang terbuka di keluarkan (close)
 <div><pre>
   $ ./VNC-server-activation.sh
 </pre></div>
 
-> **Catatan:** <br>
-Setelah selesai Activasi, program akan otomatis melakukan Rebooting Jetson Nano. Mohon pastikan data yang terbuka di keluarkan (close)
+# Kontribusi
+Jangan lupa follow media Sosial kami <br>
+YouTube : [Elektro Project](https://www.youtube.com/elektroproject) <br>
+Twitter : [@mluqmanbukhori](https://twitter.com/mluqmanbukhori)
