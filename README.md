@@ -8,7 +8,6 @@ Jetson Development Kits dan komputer lain harus berada di jaringan yang sama. Di
 
 # Download Script activation VNC server
 * Ketikkan script di bawah ini untuk mendownload melalui Terminal <br>
-<div class="highlight highlight-source-shell position-relative overflow-auto" data-snippet-clipboard-copy-content="$ mkdir -p ~/.config/autostart $ cp /usr/share/applications/vino-server.desktop ~/.config/autostart/."><pre>
-$ mkdir -p ~/.config/autostart
-$ cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
+<div class="highlight highlight-source-shell position-relative overflow-auto" data-snippet-clipboard-copy-content="wget https://github.com/mluqmanbukhori/Jetson-Nano-VNC-server-Activation/blob/main/VNC-server-activation.sh"><pre>
+$ wget https://github.com/mluqmanbukhori/Jetson-Nano-VNC-server-Activation/blob/main/VNC-server-activation.sh
 </pre></div>
