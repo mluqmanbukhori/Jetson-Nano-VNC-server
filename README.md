@@ -19,12 +19,15 @@ Jetson Development Kits dan komputer lain harus berada di jaringan yang sama. Di
 <div><pre>
   - Jika Anda menggunakan Jetson Nano 2GB Developer Kit (running LXDE) uncomment dan gunakan script ini
   -----------------------------------------------------------------------------------------------------
-  $ mkdir -p ~/.config/autostart
-  $ cp /usr/share/applications/vino-server.desktop ~/.config/autostart/. <br>
+  mkdir -p ~/.config/autostart
+  cp /usr/share/applications/vino-server.desktop ~/.config/autostart/. <br>
   - Untuk semua jenis Jetson Developer Kit (running GNOME) uncomment dan gunakan script ini
   -----------------------------------------------------------------------------------------------------
-  $ cd /usr/lib/systemd/user/graphical-session.target.wants
-  $ sudo ln -s ../vino-server.service ./.
+  cd /usr/lib/systemd/user/graphical-session.target.wants
+  sudo ln -s ../vino-server.service ./. <br>
+  - Atur password VNC Anda sendiri dengan mengganti `jetson`
+  -----------------------------------------------------------------------------------------------------
+  gsetting set org.gnome.Vino vnc-password $(echo -n 'jetson'|base64)
 </pre></div>
 
 * Set otoritas file dengan `chmod`
@@ -36,3 +39,6 @@ Jetson Development Kits dan komputer lain harus berada di jaringan yang sama. Di
 <div><pre>
   $ ./VNC-server-activation.sh
 </pre></div>
+
+> **Catatan:** <br>
+Setelah selesai Activasi, program akan otomatis melakukan Rebooting Jetson Nano. Mohon pastikan data yang terbuka di keluarkan (close)
