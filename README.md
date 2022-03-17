@@ -42,7 +42,8 @@ Setelah selesai Activasi, program akan otomatis melakukan Rebooting Jetson Nano.
   $ ./VNC-server-activation.sh
 </pre></div>
 
-# Kontribusi
+# Kontribusi | Mau bertanya?
 Jangan lupa follow media Sosial kami <br>
 YouTube : [Elektro Project](https://www.youtube.com/elektroproject) <br>
-Twitter : [@mluqmanbukhori](https://twitter.com/mluqmanbukhori)
+Twitter : [@mluqmanbukhori](https://twitter.com/mluqmanbukhori) <br>
+Instagram : [@mluqmanbukhori](https://instagram.com/mluqmanbukhori) | [@lektro.project](https://instagram.com/elektro.project)
