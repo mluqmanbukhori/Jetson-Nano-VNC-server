@@ -35,7 +35,8 @@ Jetson Development Kits dan komputer lain harus berada di jaringan yang sama. Di
 > **Catatan:** <br>
 Setelah selesai Activasi, program akan otomatis melakukan Rebooting Jetson Nano. Mohon pastikan data yang terbuka di keluarkan (close)
 <div><pre>
-  $ sudo ./install.sh
+  $ sudo chmod 755 install.sh
+  $ ./install.sh
 </pre></div>
 
 # Kontribusi | Mau bertanya?
