@@ -1,5 +1,8 @@
 #!/bin/bash
+set -e
 echo "Enable VNC server to start each time log in"
+sudo apt update
+sudo apt install -y vino
 
 # if you have a Jetson Nano 2GB Developer Kit (running LXDE)
 mkdir -p ~/.config/autostart
