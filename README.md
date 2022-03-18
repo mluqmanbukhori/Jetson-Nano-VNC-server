@@ -9,12 +9,13 @@ Jetson Development Kits dan komputer lain harus berada di jaringan yang sama. Di
 # Download Script activation VNC server
 * Ketikkan script di bawah ini untuk mendownload melalui Terminal <br>
 <div><pre>
-  $ wget https://github.com/mluqmanbukhori/Jetson-Nano-VNC-server/raw/main/VNC-server-activation.sh
+  $ git clone https://github.com/mluqmanbukhori/Jetson-Nano-VNC-server.git
+  $ cd Jetson-Nano-VNC-server/
 </pre></div>
 
-* Atur Script `VNC-server-activation.sh` menggunakan Text Editor `nano / vim / gedit`
+* Atur Script `install.sh` menggunakan Text Editor `nano / vim / gedit`
 <div><pre>
-  $ sudo nano VNC-server-activation.sh
+  $ sudo gedit install.sh
 </pre></div>
 <div><pre>
   - Jika Anda menggunakan Jetson Nano 2GB Developer Kit (running LXDE) uncomment dan gunakan script ini
@@ -30,16 +31,11 @@ Jetson Development Kits dan komputer lain harus berada di jaringan yang sama. Di
   gsetting set org.gnome.Vino vnc-password $(echo -n 'jetson'|base64)
 </pre></div>
 
-* Set otoritas file dengan `chmod`
-<div><pre>
-  $ sudo chmod 755 ./VNC-server-activation.sh
-</pre></div>
-
 * Running (jalankan) script dengan perintah berikut:
 > **Catatan:** <br>
 Setelah selesai Activasi, program akan otomatis melakukan Rebooting Jetson Nano. Mohon pastikan data yang terbuka di keluarkan (close)
 <div><pre>
-  $ ./VNC-server-activation.sh
+  $ sudo ./install.sh
 </pre></div>
 
 # Kontribusi | Mau bertanya?
