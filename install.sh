@@ -6,10 +6,11 @@ mkdir -p ~/.config/autostart
 cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
 
 # for all other Jetson developer (running GNOME) uncomment this
-#cd /usr/lib/systemd/user/graphical-session.target.wants
-#sudo ln -s ../vino-server.service ./.
+cd /usr/lib/systemd/user/graphical-session.target.wants
+sudo ln -s ../vino-server.service ./.
+cd ~
 
-echo "Configure the VNC server"
+# Configure the VNC server
 gsetting set org.gnome.Vino prompt-enabled false
 gsetting set org.gnome.Vino require-encryption false
 
