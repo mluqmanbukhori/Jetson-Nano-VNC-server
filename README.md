@@ -15,7 +15,7 @@ Jetson Development Kits dan komputer lain harus berada di jaringan yang sama. Di
 
 * Atur Script `install.sh` menggunakan Text Editor `nano / vim / gedit`
 <div><pre>
-  $ sudo gedit install.sh
+  $ gedit install.sh
 </pre></div>
 <div><pre>
   - Jika Anda menggunakan Jetson Nano 2GB Developer Kit (running LXDE) uncomment dan gunakan script ini
